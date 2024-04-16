@@ -1,0 +1,105 @@
+*, *::before, *::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    display:grid;
+    place-items: center;
+    height:100vh;
+    font-size:15px;
+    font-family: "Overpass", sans-serif;
+    background:hsl(216, 12%, 8%);
+    color:hsl(0, 0%, 100%);
+}
+.rating_component{
+    width:85%;
+    padding:20px;
+    background:hsl(213, 19%, 18%);
+    border-radius:10px;
+}
+.rating_header{
+    margin-bottom:25px;
+}  
+.rating_header .rating_starImg_container{
+    display:grid;
+    place-items:center;
+    width:30px;
+    height:30px;
+    background:hsl(216, 12%,20%);
+    border-radius:50%;
+    margin-bottom:15px;
+}
+.rating_header .rating_starImg_container img{
+    width:40%;
+    height:auto;
+}
+.rating_header h1{
+    margin-bottom:10px;
+}  
+.rating_header p{
+    font-size:0.9em;
+    line-height: 1.5em;
+    color:hsl(217, 12%, 63%);
+}  
+/* Form */
+.ratingForm{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.ratingForm .ratingForm_rating_container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+}
+.ratingForm .ratingForm_rating_container label{
+    width:35px;
+    height:35px;
+    background:hsl(216, 12%,20%);
+    color:hsl(216, 12%, 54%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    padding-top:2px;
+    padding-right:2px;
+    font-size: 0.8em;
+}
+.ratingForm .ratingForm_rating_container label.clicked{
+    background:hsl(217, 12%, 63%);
+    color:white;
+}
+.ratingForm .ratingForm_rating_container label:active{
+    background:hsl(25, 97%, 53%);
+    color:white;
+}
+
+.ratingForm .ratingForm_rating_container label .rating_input{
+    display:none;
+}
+.ratingForm button{
+    width:100%;
+    border:none;
+    border-radius:20px;
+    padding:1em;
+    color:hsl(0, 0%, 100%);
+    background:hsl(25, 97%, 53%);
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-weight:500;
+    font-size:0.8em;
+}
+.ratingForm button:active{
+    color: hsl(25, 97%, 53%);
+    background:hsl(0, 0%, 100%);
+}
+/* Hidden Section */
+.hidden-section{
+    display:none;
+}
+.hidden-section.thank_you_state{
+    display:block;
+}
