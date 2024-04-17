@@ -12,6 +12,12 @@ body{
     background:hsl(216, 12%, 8%);
     color:hsl(0, 0%, 100%);
 }
+.rating_container{
+    padding:10px 0;
+}
+.rating_container.hide{
+    display:none;
+}
 .rating_component{
     max-width:350px;
     width:85%;
@@ -47,7 +53,7 @@ body{
 .ratingForm{
     display:flex;
     justify-content: center;
-    gap:20px;
+    gap:25px;
     flex-wrap: wrap;
 }
 .ratingForm .ratingForm_rating_container{
@@ -69,11 +75,12 @@ body{
     padding-right:2px;
     font-size: 0.8em;
 }
-.ratingForm .ratingForm_rating_container label.clicked{
+.ratingForm .ratingForm_rating_container label:hover{
     background:hsl(217, 12%, 63%);
+    cursor: pointer;
     color:white;
 }
-.ratingForm .ratingForm_rating_container label:active{
+.ratingForm .ratingForm_rating_container label.clicked{
     background:hsl(25, 97%, 53%);
     color:white;
 }
@@ -98,9 +105,37 @@ body{
     background:hsl(0, 0%, 100%);
 }
 /* Hidden Section */
-.hidden-section{
+.rating_result{
     display:none;
 }
-.hidden-section.thank_you_state{
+.rating_result.thank_you_state{
+    text-align: center;
+    padding:10px 0 ;
     display:block;
+    
 }
+.rating_result_header {
+    width:50%;
+    margin:0 auto 20px auto;
+}
+.rating_result_header img {
+    width:100%;
+}
+.rating_result .rating_result_selected{
+    background:hsl(216, 12%, 22%);
+    display:inline-block;
+    padding:8px 10px 5px;
+    color:hsl(25, 97%, 63%);
+    border-radius:30px;
+    margin-bottom:25px;
+}
+.rating_result h1{
+    margin-bottom:10px;
+}
+.rating_result .rating_result_feedback{
+    color:hsl(217, 12%, 63%);
+}
+.rating_result > p {
+    font-size:0.9em;
+    line-height: 1.5em;
+}   
