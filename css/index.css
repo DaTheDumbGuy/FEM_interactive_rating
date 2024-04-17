@@ -13,7 +13,7 @@ body{
     color:hsl(0, 0%, 100%);
 }
 .rating_container{
-    padding:10px 0;
+    padding:10px 0 0;
 }
 .rating_container.hide{
     display:none;
@@ -26,7 +26,7 @@ body{
     border-radius:20px;
 }
 .rating_header{
-    margin-bottom:25px;
+    margin-bottom:20px;
 }  
 .rating_header .rating_starImg_container{
     display:grid;
@@ -35,7 +35,7 @@ body{
     height:40px;
     background:hsl(213, 19%, 22%);
     border-radius:50%;
-    margin-bottom:15px;
+    margin-bottom:20px;
 }
 .rating_header .rating_starImg_container img{
     width:30%;
@@ -110,7 +110,7 @@ body{
 }
 .rating_result.thank_you_state{
     text-align: center;
-    padding:10px 0 ;
+    padding:10px 0 0 ;
     display:block;
     
 }
