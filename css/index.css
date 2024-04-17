@@ -12,6 +12,11 @@ body{
     background:hsl(216, 12%, 8%);
     color:hsl(0, 0%, 100%);
 }
+main{
+    width:100%;
+    height:100%;
+    
+}
 .rating_container{
     padding:10px 0 0;
 }
