@@ -79,14 +79,15 @@ main{
     padding-top:2px;
     padding-right:2px;
     font-size: 0.8em;
+    transition: 0.3s ease-in-out;
 }
 .ratingForm .ratingForm_rating_container label:hover{
-    background:hsl(217, 12%, 63%);
+    background:hsl(25, 97%, 53%);
     cursor: pointer;
     color:white;
 }
 .ratingForm .ratingForm_rating_container label.clicked{
-    background:hsl(25, 97%, 53%);
+    background:hsl(217, 12%, 63%);
     color:white;
 }
 
